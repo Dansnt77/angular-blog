@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -8,6 +8,14 @@ import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
   styleUrl: './big-card.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class BigCardComponent {
+export class BigCardComponent implements OnInit {
+  photoCover:string=""
+  cardTitle:string="Lançamento!! Portifólio"
+  cardDescription:string="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum sed eius commodi illo provident laudantium repellendus iure eaque quaerat nisi atque nulla enim delectus, est culpa vitae voluptatum repudiandae?"
 
+  constructor(){}
+
+  ngOnInit(): void {
+
+  }
 }

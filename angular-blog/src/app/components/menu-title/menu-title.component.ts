@@ -5,7 +5,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './menu-title.component.html',
-  styleUrl: './menu-title.component.css',
+  styleUrls: ['./menu-title.component.css', './menu-title.responsive.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MenuTitleComponent {

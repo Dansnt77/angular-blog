@@ -5,7 +5,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './small-card.component.html',
-  styleUrl: './small-card.component.css',
+  styleUrls: ['./small-card.component.css', './small-card.responsive.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SmallCardComponent {
